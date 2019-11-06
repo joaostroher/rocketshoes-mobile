@@ -33,6 +33,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-console':[
       'warn', { allow: ['tron'] }
-    ]
+    ],
+    'no-param-reassign': 'off'
   },
 };

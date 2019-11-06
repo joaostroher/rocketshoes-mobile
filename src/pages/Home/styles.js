@@ -2,12 +2,16 @@ import styled from 'styled-components/native';
 
 import colors from '../../styles/colors';
 
-export const ProductsContainer = styled.ScrollView.attrs({
+export const ProductsScroll = styled.ScrollView.attrs({
   horizontal: true,
 })`
   padding: 30px 0;
-  flex-direction: row;
   height: 100%;
+`;
+
+export const ProductsContainer = styled.View`
+  flex-direction: row;
+  margin: 10px 20px;
 `;
 
 export const Product = styled.View`
@@ -16,13 +20,9 @@ export const Product = styled.View`
   padding: 20px;
   width: 300px;
   max-height: 400px;
-  margin-left: 10px;
   margin-right: 10px;
   align-items: center;
   justify-content: flex-start;
-  &:first-child {
-    margin-left: 50px;
-  }
 `;
 
 export const ProductImage = styled.Image.attrs({
@@ -31,8 +31,6 @@ export const ProductImage = styled.Image.attrs({
   width: 200px;
   height: 200px;
 `;
-
-export const ProductData = styled.View``;
 
 export const ProductTitle = styled.Text`
   font-size: 20px;
